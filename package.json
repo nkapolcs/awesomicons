@@ -1,0 +1,25 @@
+{
+  "name": "awesomicons",
+  "version": "0.0.1",
+  "description": "SVG icons handler",
+  "main": "index.js",
+  "scripts": {
+    "awesomicons": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://fiad@bitbucket.org/fiad/awesomicons.git"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "sass",
+    "scss"
+  ],
+  "author": "Fiad",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/fiad/awesomicons#readme",
+  "dependencies": {
+    "file-system": "^2.2.1"
+  }
+}
