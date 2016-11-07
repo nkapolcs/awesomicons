@@ -123,6 +123,9 @@ and stylize it as follows:
         @include awesomicon(rainbow, #ff9900 #ffcc00 #cc6633 #cccc33 #3399cc);
     }
 ```
+
+Enjoy your icons after *SASS* compiling!
+
     
 #### __TIPS AND TRICKS:__
 
@@ -158,7 +161,7 @@ You can also build a simple framework to have a *CSS* class-based icons handling
     @each $icon-name, $icon-code in $awesomicons {
         .icon--#{$icon-name} {
             @each $color-name, $color-value in $colors {
-                 .icon--#{$color-name} {
+                 &.icon--#{$color-name} {
                     @include awesomicon($icon-name, $color-value);
                 }
             }
