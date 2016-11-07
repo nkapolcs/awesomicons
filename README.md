@@ -94,9 +94,9 @@ As you can see, each *fill* attribute contains a placeholder as value. In this e
 
 > __N.B.:__ If you set your *SVGs* for multi-color mode, you can also use a single color to paint your icon as all placeholders will be replaced by the same value if only one color is provided.
 
-Now, by running the following command
+Now, by running the following command:
 
-    npm explore awesomicons -- npm run awesomicons app/images/icons app/styles/modules/\_icons.scss
+    npm explore awesomicons -- npm run awesomicons app/images/icons app/styles/modules/_icons.scss
     
 the content of __\_icons.scss__ will look as follows:
 
