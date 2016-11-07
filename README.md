@@ -135,13 +135,13 @@ Enjoy your icons after *SASS* compiling!
 
 The __awesomicon()__ mixin also accepts additional parameters to improve your icons. The full list below:
     
-* *[name]*: the name of the icon (i.e. the filename of the *SVG*)
+* *[name]*: the icon's name (i.e. the filename of the *SVG*)
 * *[colors]*: the list of colors to paint the icon with (e.g. #ffffff #333)
-* *[width]*: the width of the icon (1em default)
-* *[height]*: the height of the icon (1em default)
-* *[position]*: the width of the icon (50% 50% default)
-* *[background]*: the background color of the icon block (transparent default)
-* *[radius]*: the border radius of the icon block
+* *[width]*: the icon's width (1em default)
+* *[height]*: the icon's height (1em default)
+* *[position]*: the value of icon's background-position property (50% 50% default)
+* *[background]*: the value of icon block's background-color property (transparent default)
+* *[radius]*: the value of icon block's border-radius property
 
 For example, you can combine *background* and *radius* to get colored icon blocks with different shapes (e.g. square/circle) or you may want to use *position* to adjust icon's alignment to fit the best with your context. Here, an hint:
 
