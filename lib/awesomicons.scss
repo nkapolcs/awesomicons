@@ -99,20 +99,30 @@
 /**
  * Provides CSS code to set an icon as background image
  * ---------------------------------------------------------------------------------------------------------
- * @param   {string}   $icon-name               -   The name of the target icon
- * @param   {string}   $palette     [#000]      -   The hex colors to be used as icon's fill/stroke values
- * @param   {string}   $position    [50% 50%]   -   Overrides background position for a fine-tuned alignment
+ * @param   {string}    $icon-name                    -   The name of the target icon
+ * @param   {string}    $palette      [#000]          -   The hex colors to be used as icon's fill/stroke values
+ * @param   {number}    $w            [1em]           -   The width of the icon
+ * @param   {number}    $h            [1em]           -   The height of the icon
+ * @param   {string}    $position     [50% 50%]       -   Overrides background position for a fine-tuned alignment
+ * @param   {string}    $background   [transparent]   -   The background color of the icon
+ * @param   {string}    $rounded      [false]         -   The border radius of the icon
  */
-@mixin awesomicon($icon-name, $palette: #000, $position: 50% 50%) {
+@mixin awesomicon($icon-name, $palette: #000, $w: 1em, $h: 1em, $position: 50% 50%, $background: transparent, $radius: false) {
   @if type-of($icon-name) == string {
     $icon: _awesomiconsGetIcon($icon-name, $palette, 'data-uri');
     @if $icon != false {
+      display: inline-block;
+      width: $w;
+      height: $h;
       background: {
         image: url($icon);
         size: contain;
         position: #{$position};
         repeat: no-repeat;
-        color: transparent;
+        color: $background;
+      }
+      @if $rounded {
+        border-radius: $radius;
       }
     }
   } @else {
