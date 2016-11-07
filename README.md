@@ -113,7 +113,7 @@ Also, take a look at __main.scss__ file, where __*AwesomIcons*__'s *SCSS* librar
 Since configuration is complete, we just have to create an *HTML* icon element like this:
 
 ```html
-    <i class="your-icon-class"></i>
+<i class="your-icon-class"></i>
 ```
  
 and stylize it as follows:
