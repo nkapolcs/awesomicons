@@ -133,21 +133,21 @@ Enjoy your icons after *SASS* compiling!
     
 #### __TIPS AND TRICKS:__
 
-The __awesomicon()__ mixin also accepts additional parameters to improve your icons. The full list below:
+In addition to icon's *[name]* and *[colors]*, the __awesomicon()__ mixin also accepts a third parameter to improve your icons: an options map with the following properties:
     
-* *[name]*: the icon's name (i.e. the filename of the *SVG*)
-* *[colors]*: the list of colors to paint the icon with (e.g. #ffffff #333)
-* *[width]*: the icon's width (1em default)
-* *[height]*: the icon's height (1em default)
-* *[position]*: the value of icon's background-position property (50% 50% default)
-* *[background]*: the value of icon block's background-color property (transparent default)
-* *[radius]*: the value of icon block's border-radius property
+* *[width]*: the icon block's width (default: 1em)
+* *[height]*: the icon block's height (default: 1em)
+* *[padding]*: the icon block's padding (default: 0)
+* *[position]*: the icon's position (default: 50% 50%)
+* *[background]*: the icon block's background-color (default: transparent)
+* *[border]*: the icon block's border (default: none)
+* *[radius]*: the icon block's border-radius (default: none)
 
 For example, you can combine *background* and *radius* to get colored icon blocks with different shapes (e.g. square/circle) or you may want to use *position* to adjust icon's alignment to fit the best with your context. Here, an hint:
 
 ```scss
 .your-icon-class--circle {
-  @include awesomicon(rainbow, #ffffff, 2em, 2em, 50% 50%, #3399cc, 50%);
+  @include awesomicon(rainbow, #ffffff, (padding: 4px, background: #3399cc, radius: 50%));
 }
 ```
 
