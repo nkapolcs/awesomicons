@@ -11,7 +11,7 @@ try {
   // building icons
   Builder.start(_src, _dest);
   // watching icons
-  if (typeof _watch !== 'undefined' && _watch === '--watch') {
+  if (typeof _watch !== 'undefined' && _watch === 'watch') {
     FS.watch(_src, function() {
       // build on change
       Builder.start(_src, _dest);

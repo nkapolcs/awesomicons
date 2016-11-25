@@ -34,7 +34,7 @@ In order to use __*AwesomIcons*__:
 ### USAGE
 Move to the root of your project by terminal and run the following command to init __*AwesomIcons*__:
 
-    npm explore awesomicons -- npm run awesomicons [source] [destination] [--watch]
+    npm explore awesomicons -- npm run awesomicons [source] [destination] [watch]
 
 where:
 
@@ -42,7 +42,7 @@ where:
 
 - *[destination]* is the filepath of *SCSS* file you want to use to store the *SASS* map in;
 
-- *[--watch]* allows to listen for changes in icons folder, so the *SASS* map can be live updated when you add, remove or modify *SVG* files (optional).
+- *[watch]* allows to listen for changes in icons folder, so the *SASS* map can be live updated when you add, remove or modify *SVG* files (optional).
 
 
 ### MORE
