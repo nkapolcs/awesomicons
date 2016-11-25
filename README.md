@@ -14,9 +14,9 @@ __*AwesomIcons*__ does its job through two different steps:
 ### INSTALLATION
 Move to the root of your project by terminal and run the following command to install __*AwesomIcons*__:
 
-    npm install awesomicons [--save]
+    npm install awesomicons
 
-Then, add __./node_modules/awesomicons/lib/awesomicons.scss__ to your *SCSS* dependencies.
+Then, add __./node_modules/awesomicons/lib/\_awesomicons.scss__ to your *SCSS* dependencies.
 
 
 ### PROJECT SETUP
