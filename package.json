@@ -21,13 +21,13 @@
   "homepage": "https://github.com/purplenetwork/awesomicons#readme",
   "contributors": [
     {
-      "Andrea Fiadone"
+      "name": "Andrea Fiadone"
     },
     {
-      "Mauro Mazzei"
+      "name": "Mauro Mazzei"
     },
     {
-      "Alessio Di Matteo"
+      "name": "Alessio Di Matteo"
     }
   ],
   "dependencies": {
